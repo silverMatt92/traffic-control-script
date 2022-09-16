@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Interface connect to out lan
-INTERFACE="wlp0s20f3"
+INTERFACE="eth0"
 # Interface virtual for incomming traffic
 VIRTUAL="ifb0"
 # set the direction (1 = outgoing only, 2 = incoming only 3 = both)
