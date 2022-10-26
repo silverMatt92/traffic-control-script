@@ -8,13 +8,21 @@ At line 4, modify the network interface name based on the Linux box where you’
 If you want to limit upload/download speed on the interface, set SPEED_DOWNLOAD and SPEED_UPLOAD accordingly at lines 10,11; if not, simply set this limit above real physical speed;  
 
 Add <x> ms of latency inbound/outbound for specific list of <ip-address[es]|subnet>  
+```bash
 sudo ./traffic-control-v3.sh --delay=<x> <ip-address|subnet> <ip-address|subnet> ...  
-
+```bash
+  
 Add <x> ms of latency inbound for specific list of <ip-address[es]|subnet>  
+```bash
 sudo ./traffic-control-v3.sh --delay=<x> --incoming <ip-address|subnet> <ip-address|subnet> ...  
-
+```bash
+  
 Add <x> ms of latency outbound for specific list of <ip-address[es]|subnet>  
+```bash
 sudo ./traffic-control-v3.sh --delay=<x> --outgoing <ip-address|subnet> <ip-address|subnet> ...  
-
+```bash
+  
 Remove the latency from interface  
+```bash
 sudo ./traffic-control-v3.sh -r  
+```bash
